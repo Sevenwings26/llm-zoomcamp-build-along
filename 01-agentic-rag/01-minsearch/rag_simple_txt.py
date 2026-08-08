@@ -27,9 +27,13 @@ def llm(prompt):
 
 
 question_prompt = """
-question: what are the services that sevevwings offers?
+question: Tell me about docker?
 answer: 
 """
+# question_prompt = """
+# question: what are the services that sevevwings offers?
+# answer: 
+# """
 
 answer = llm(question_prompt)
 

@@ -33,9 +33,13 @@ client = OpenAI(
 
 # build prompt 
 INSTRUCTIONS = """
-Answer questions based on the context provided, and also use your general knowledge to answer questions that are not in the context.
-Do not hallucinate. If the answer is not found in the context, and general knowledge doesn't correlate, respond with, "Question Asked is not related to Sevenwings INC!"
+Answer questions based on the context provided, do not answer out of the context.
+If the answer is not found in the context, respond with 'Question Asked is not related to Sevenwings INC!'
 """
+# INSTRUCTIONS = """
+# Answer questions based on the context provided, and also use your general knowledge to answer questions that are not in the context.
+# Do not hallucinate. If the answer is not found in the context, and general knowledge doesn't correlate, respond with, "Question Asked is not related to Sevenwings INC!"
+# """
 
 USER_PROMPT_TEMPLATE = """
 QUESTION: {question}
